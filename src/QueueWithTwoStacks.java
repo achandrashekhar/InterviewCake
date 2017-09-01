@@ -28,5 +28,9 @@ public class QueueWithTwoStacks<E> {
         System.out.println(queueWithTwoStacks.dequeue());
         System.out.println(queueWithTwoStacks.dequeue());
         System.out.println(queueWithTwoStacks.dequeue());
+        queueWithTwoStacks.enqueue(4);
+        queueWithTwoStacks.enqueue(5);
+        System.out.println(queueWithTwoStacks.dequeue());
+        System.out.println(queueWithTwoStacks.dequeue());
     }
 }
