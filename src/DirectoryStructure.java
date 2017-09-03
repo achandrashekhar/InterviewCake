@@ -16,8 +16,8 @@ public class DirectoryStructure {
     }
     private class Directory {
         String name;
-        List<Directory> directories;
-        List<File> files;
+        List<Directory> directories =  new LinkedList<>();
+        List<File> files=new LinkedList<>();
 
         public Directory(String name) {
             this.name = name;
@@ -30,6 +30,8 @@ public class DirectoryStructure {
         public void addFile(Directory parent, File file){
             parent.files.add(file);
         }
+
+
     }
 
     Directory createDirectoryStructure(List<String> absolutePaths) {
@@ -41,13 +43,14 @@ public class DirectoryStructure {
                 if (i.contains(".")) {
 
                     File file = new File(i);
+                    parent.addFile(parent,file);
 
                 } else {
-
-                    Directory directory = new Directory(i);
-                    directory.addDirectory(directory);
+                    parent.addDirectory(parent);
                 }
+
             }
+
         }
         return null;
     }
@@ -58,6 +61,14 @@ public class DirectoryStructure {
 
     public static void main(String[] args) {
         String absolutePath1 = "home/ash/doc2.txt";
+        String absolutePath2 = "home/aishu/doc3.txt";
+        List fileList = new LinkedList();
+        fileList.add(absolutePath1);
+        fileList.add(absolutePath2);
+        DirectoryStructure directoryStructure = new DirectoryStructure();
+        directoryStructure.createDirectoryStructure(fileList);
+
+
 
     }
 
