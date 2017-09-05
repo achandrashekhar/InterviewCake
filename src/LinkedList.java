@@ -2,6 +2,7 @@
  * Created by ashi on 8/23/17.
  * Problems solved in this Class:
  *      1. Detect loop in a Linked List
+ *      2. Reverse a Linked List
  */
 public class LinkedList {
     private Node root;
@@ -43,7 +44,7 @@ public class LinkedList {
         addNode(2);
         addNode(3);
         addNode(4);
-        addLoop(5); //Make 5 point to 2!
+       // addLoop(5); //Make 5 point to 2!
     }
 
     public void printLinkedList(){
@@ -79,15 +80,30 @@ public class LinkedList {
         return false;
     }
 
+    public void reverseLinkedList(){
+        Node currentNode = root;
+        Node previousNode = null;
+        Node nextNode = null;
+        while(currentNode!=null){
+            nextNode = currentNode.next;
+            currentNode.next = previousNode;
+            previousNode = currentNode;
+            currentNode = nextNode;
+        }
+        root = previousNode;
+        printLinkedList();
+    }
+
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         linkedList.populateLinkedList();
 //        linkedList.printLinkedList();
-        if(linkedList.findLoop()){
-            System.out.println("There is a loop!");
-        } else {
-            System.out.println("There is no loop!");
-        }
+//        if(linkedList.findLoop()){
+//            System.out.println("There is a loop!");
+//        } else {
+//            System.out.println("There is no loop!");
+//        }
+        linkedList.reverseLinkedList();
     }
 
 }
