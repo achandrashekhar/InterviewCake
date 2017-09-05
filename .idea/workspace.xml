@@ -16,14 +16,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+            <state relative-caret-position="-1007">
+              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="e#290#291#0" expanded="true" />
                 <element signature="e#332#333#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindUniqueInArray.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FindUniqueInArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="35" column="71" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,6 +150,7 @@
         <option value="$PROJECT_DIR$/src/DirectoryStructure.java" />
         <option value="$PROJECT_DIR$/src/PeekingIterator.java" />
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/FindUniqueInArray.java" />
       </list>
     </option>
   </component>
@@ -195,22 +210,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="Application.LinkedList">
-    <configuration default="false" name="QueueWithTwoStacks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="QueueWithTwoStacks" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Interview Prep" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.FindUniqueInArray">
     <configuration default="false" name="LargestStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="LargestStack" />
@@ -259,6 +259,21 @@
     <configuration default="false" name="LinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="LinkedList" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Interview Prep" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="FindUniqueInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="FindUniqueInArray" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -476,19 +491,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.QueueWithTwoStacks" />
-      <item index="1" class="java.lang.String" itemvalue="Application.LargestStack" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DirectoryStructure" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PeekingIterator" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LinkedList" />
+      <item index="0" class="java.lang.String" itemvalue="Application.LargestStack" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DirectoryStructure" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PeekingIterator" />
+      <item index="3" class="java.lang.String" itemvalue="Application.LinkedList" />
+      <item index="4" class="java.lang.String" itemvalue="Application.FindUniqueInArray" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LinkedList" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PeekingIterator" />
-        <item index="2" class="java.lang.String" itemvalue="Application.DirectoryStructure" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LargestStack" />
-        <item index="4" class="java.lang.String" itemvalue="Application.QueueWithTwoStacks" />
+        <item index="0" class="java.lang.String" itemvalue="Application.FindUniqueInArray" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LinkedList" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PeekingIterator" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DirectoryStructure" />
+        <item index="4" class="java.lang.String" itemvalue="Application.LargestStack" />
       </list>
     </recent_temporary>
   </component>
@@ -654,11 +669,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="-1007">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
             <element signature="e#290#291#0" expanded="true" />
             <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FindUniqueInArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="35" column="71" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
           </folding>
         </state>
       </provider>
