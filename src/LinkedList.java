@@ -3,6 +3,7 @@
  * Problems solved in this Class:
  *      1. Detect loop in a Linked List
  *      2. Reverse a Linked List
+ *      3. Find Kth to last Node
  */
 public class LinkedList {
     private Node root;
@@ -44,6 +45,9 @@ public class LinkedList {
         addNode(2);
         addNode(3);
         addNode(4);
+        addNode(5);
+        addNode(6);
+        addNode(7);
        // addLoop(5); //Make 5 point to 2!
     }
 
@@ -94,6 +98,26 @@ public class LinkedList {
         printLinkedList();
     }
 
+    /*
+        This approach uses a 'stick'. Let's say, your stick is K nodes wide. you keep incrementing the end of these
+        sticks until the right end of your stick hits the last node.
+        You will then just return the value at the left end of the stick, since the stick is k nodes wide!
+     */
+
+    public int kthToLastNode(int k){
+        Node rightEnd = root;
+        Node leftEnd =  root;
+        for (int i = 0; i < k; i++) {
+            rightEnd = rightEnd.next; //build the stick to be k nodes away from the root
+        }
+        while(rightEnd!=null){ //keep advancing the stick forward until you hit the end
+            leftEnd = leftEnd.next;
+            rightEnd = rightEnd.next;
+        }
+        return leftEnd.value;
+
+    }
+
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         linkedList.populateLinkedList();
@@ -103,7 +127,8 @@ public class LinkedList {
 //        } else {
 //            System.out.println("There is no loop!");
 //        }
-        linkedList.reverseLinkedList();
+        //linkedList.reverseLinkedList();
+        System.out.println(linkedList.kthToLastNode(3));
     }
 
 }
