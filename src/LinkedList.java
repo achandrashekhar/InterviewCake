@@ -118,6 +118,8 @@ public class LinkedList {
 
     }
 
+
+
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         linkedList.populateLinkedList();
@@ -127,8 +129,8 @@ public class LinkedList {
 //        } else {
 //            System.out.println("There is no loop!");
 //        }
-        //linkedList.reverseLinkedList();
-        System.out.println(linkedList.kthToLastNode(3));
+        linkedList.reverseLinkedList();
+        //System.out.println(linkedList.kthToLastNode(3));
     }
 
 }
