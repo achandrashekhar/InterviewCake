@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b16266dd-1c8e-4fe8-a767-0cb3f7e9f693" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ArrayQuestions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/DirectoryStructure$Directory.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/DirectoryStructure$Directory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/DirectoryStructure$File.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/DirectoryStructure$File.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/DirectoryStructure.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/DirectoryStructure.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/FindUniqueInArray.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/FindUniqueInArray.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/LargestStack.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/LargestStack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/LinkedList$Node.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/LinkedList$Node.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/LinkedList.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/LinkedList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/MinIntHeap.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/MinIntHeap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/PeekingIterator.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/PeekingIterator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/QueueWithTwoStacks.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/QueueWithTwoStacks.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/ReverseString.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/ReverseString.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Interview Prep/TreeQuestions.class" afterPath="$PROJECT_DIR$/out/production/Interview Prep/TreeQuestions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/NumberQuestions.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LinkedList.java" afterPath="$PROJECT_DIR$/src/LinkedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ArrayQuestions.java" afterPath="$PROJECT_DIR$/src/ArrayQuestions.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +46,7 @@
       <file leaf-file-name="FindUniqueInArray.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FindUniqueInArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-38">
               <caret line="11" column="5" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="11" selection-end-column="5" />
               <folding />
             </state>
@@ -69,11 +56,21 @@
       <file leaf-file-name="ArrayQuestions.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ArrayQuestions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            <state relative-caret-position="-8">
+              <caret line="59" column="103" lean-forward="false" selection-start-line="59" selection-start-column="103" selection-end-line="59" selection-end-column="103" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberQuestions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/NumberQuestions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,6 +167,7 @@
         <option value="$PROJECT_DIR$/src/MissingNumber.java" />
         <option value="$PROJECT_DIR$/src/WordPattern.java" />
         <option value="$PROJECT_DIR$/src/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/NumberQuestions.java" />
         <option value="$PROJECT_DIR$/src/ArrayQuestions.java" />
       </list>
     </option>
@@ -261,21 +259,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="FindUniqueInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="FindUniqueInArray" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Interview Prep" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ReverseString" />
@@ -309,6 +292,21 @@
     <configuration default="false" name="ArrayQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ArrayQuestions" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Interview Prep" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="NumberQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="NumberQuestions" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -696,18 +694,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.LinkedList" />
-      <item index="1" class="java.lang.String" itemvalue="Application.FindUniqueInArray" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ReverseString" />
-      <item index="3" class="java.lang.String" itemvalue="Application.WordPattern" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ArrayQuestions" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ReverseString" />
+      <item index="2" class="java.lang.String" itemvalue="Application.WordPattern" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ArrayQuestions" />
+      <item index="4" class="java.lang.String" itemvalue="Application.NumberQuestions" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.ArrayQuestions" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LinkedList" />
-        <item index="2" class="java.lang.String" itemvalue="Application.WordPattern" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ReverseString" />
-        <item index="4" class="java.lang.String" itemvalue="Application.FindUniqueInArray" />
+        <item index="1" class="java.lang.String" itemvalue="Application.NumberQuestions" />
+        <item index="2" class="java.lang.String" itemvalue="Application.LinkedList" />
+        <item index="3" class="java.lang.String" itemvalue="Application.WordPattern" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ReverseString" />
       </list>
     </recent_temporary>
   </component>
@@ -722,12 +720,12 @@
       <option name="presentableId" value="Default" />
       <updated>1503544027940</updated>
       <workItem from="1514515363543" duration="2629000" />
-      <workItem from="1515265559422" duration="1893000" />
+      <workItem from="1515265559422" duration="6334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4522000" />
+    <option name="totallyTimeSpent" value="8963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
@@ -1139,16 +1137,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FindUniqueInArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="-38">
           <caret line="11" column="5" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NumberQuestions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ArrayQuestions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        <state relative-caret-position="-8">
+          <caret line="59" column="103" lean-forward="false" selection-start-line="59" selection-start-column="103" selection-end-line="59" selection-end-column="103" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
