@@ -17,6 +17,15 @@ public class LinkedList {
         }
     }
 
+    class LinkedNode {
+        int val;
+        LinkedNode next;
+
+        public LinkedNode(int val){
+            val = val;
+        }
+    }
+
     public void addNode(int value) {
         if (root == null) {
             root = new Node(value);
@@ -30,6 +39,14 @@ public class LinkedList {
         Node tail = root;
         while(tail.next!= null) {
             tail = tail.next;
+        }
+        return tail;
+    }
+
+    public Node getGenericTail(Node node){
+        Node tail = node;
+        while(tail.next!=null){
+            tail= tail.next;
         }
         return tail;
     }
@@ -116,6 +133,25 @@ public class LinkedList {
         }
         return leftEnd.value;
 
+    }
+
+    public Node addTwoNumbers(Node l1, Node l2) {
+        Node result = null;
+        Node temp = result;
+        int carryOver = 0;
+        Node head1 = l1;
+        Node head2 = l2;
+        while(head1!=null && head2!=null){
+            Node newNode = new Node(head1.value+head2.value+carryOver);
+            if(result==null){
+                result = newNode;
+                temp = result.next;
+            }
+            else temp = getGenericTail(result);
+            temp = newNode;
+            temp = temp.next;
+        }
+        return result;
     }
 
 

@@ -16,6 +16,8 @@ public class LargestStack {
 
         if(maxStack.isEmpty()||item>currentMax){
             maxStack.push(item);
+        } else {
+            maxStack.push(currentMax);
         }
 
         stack.push(item);
@@ -35,11 +37,14 @@ public class LargestStack {
         largestStack.push(0);
         largestStack.push(1);
         largestStack.push(2);
+        largestStack.push(-1);
         largestStack.pop();
+
+        System.out.println("largest is "+largestStack.getMax());
         largestStack.push(2);
         largestStack.push(3);
-        System.out.println(largestStack.getMax());
+        System.out.println("largest is "+largestStack.getMax());
         largestStack.pop();
-        System.out.println(largestStack.getMax());
+        System.out.println("largest is "+largestStack.getMax());
     }
 }
