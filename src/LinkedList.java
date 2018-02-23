@@ -65,7 +65,7 @@ public class LinkedList {
         addNode(5);
         addNode(6);
         addNode(7);
-       // addLoop(5); //Make 5 point to 2!
+        // addLoop(5); //Make 5 point to 2!
     }
 
     public void printLinkedList(){
@@ -88,15 +88,15 @@ public class LinkedList {
         Node slowRunner = root;
         Node FastRunner = root;
         while(slowRunner!=null){
-        slowRunner = slowRunner.next;
-        if(FastRunner.next.next!=null) {
-            FastRunner = FastRunner.next.next;
-            if (slowRunner == FastRunner) {
-                return true;
+            slowRunner = slowRunner.next;
+            if(FastRunner.next.next!=null) {
+                FastRunner = FastRunner.next.next;
+                if (slowRunner == FastRunner) {
+                    return true;
+                }
+            } else {
+                return false;
             }
-        } else {
-            return false;
-        }
         }
         return false;
     }
