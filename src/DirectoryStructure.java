@@ -55,6 +55,10 @@ public class DirectoryStructure {
         return null;
     }
 
+    public void printDirectory(DirectoryStructure directory){
+        System.out.println(directory);
+    }
+
     List<String> createAbsoluteFilePaths(Directory root) {
         return null;
     }
@@ -67,7 +71,7 @@ public class DirectoryStructure {
         fileList.add(absolutePath2);
         DirectoryStructure directoryStructure = new DirectoryStructure();
         directoryStructure.createDirectoryStructure(fileList);
-
+        directoryStructure.printDirectory(directoryStructure);
 
 
     }
