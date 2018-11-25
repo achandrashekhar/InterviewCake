@@ -17,6 +17,10 @@ public class LinkedList {
         }
     }
 
+    public Node getRoot(){
+        return root;
+    }
+
     class LinkedNode {
         int val;
         LinkedNode next;
@@ -135,6 +139,25 @@ public class LinkedList {
 
     }
 
+    public void printRecursiveLinkedList(Node node){
+        if(node==null){
+            return;
+        }
+        System.out.println(node.value+ " ");
+        printRecursiveLinkedList(node.next);
+    }
+
+    public void recursiveReverseLinkedList(Node node){
+       if(node.next==null){
+          root = node;
+          return;
+       }
+        recursiveReverseLinkedList(node.next);
+        Node tempNode = node.next;
+        tempNode.next = node;
+        node.next=null;
+
+    }
 
 
     public Node addTwoNumbers(Node l1, Node l2) {
@@ -161,13 +184,16 @@ public class LinkedList {
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         linkedList.populateLinkedList();
+      //  linkedList.printRecursiveLinkedList(linkedList.root);
+        linkedList.recursiveReverseLinkedList(linkedList.root);
+        linkedList.printRecursiveLinkedList(linkedList.root);
 //        linkedList.printLinkedList();
 //        if(linkedList.findLoop()){
 //            System.out.println("There is a loop!");
 //        } else {
 //            System.out.println("There is no loop!");
 //        }
-        linkedList.reverseLinkedList();
+        //linkedList.reverseLinkedList();
         //System.out.println(linkedList.kthToLastNode(3));
     }
 
