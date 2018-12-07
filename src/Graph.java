@@ -125,6 +125,30 @@ public class Graph {
        return n;
     }
 
+    /**
+     * Found this on career cup
+     * Given a graph with exactly N-1 edges and N Vertices, given a pair of 3 queries,
+     * where each query(u,v) is a path from u, v
+     * Find out how many times each of these vertices is visited while finding path in
+     * the 3 given queries.
+     * @param visited array of visited vertices
+     * @param u start vertex
+     * @param v end vertex
+     */
+
+    public void findHowManyVisits(int[] visited, int u, int v){
+       if(adjList[u].element()==v){
+           return;
+       }
+        Iterator<Integer> iterator = adjList[u].iterator();
+        while(iterator.hasNext()) {
+            int p = iterator.next();
+            findHowManyVisits(visited,p,v);
+            visited[p]++;
+        }
+        visited[u]++;
+    }
+
     public static void main(String[] args) {
         Graph graph = new Graph(9);
         graph.addEdge(1,2);
@@ -154,7 +178,7 @@ public class Graph {
         g6.addEdge(2,5);
         g6.addEdge(1,3);
         g6.addEdge(4,3);
-        System.out.println(g6.findNumerofPaths(1)); //2
+       // System.out.println(g6.findNumerofPaths(1)); //2
 
 
 
@@ -188,6 +212,26 @@ public class Graph {
 //        g1.addEdge(8,7);
 //        g1.addEdge(7,9);
       //  g1.breadthFirstSearchPrint(1);
+
+        Graph g7 = new Graph(5);
+        g7.addEdge(1,2);
+        g7.addEdge(2,3);
+        g7.addEdge(3,4);
+        g7.addEdge(4,5);
+
+
+        int[] visited = new int[g7.V]; // Lol this ain't a good idea, but there's no  time for vulnerability, life is too short
+        for (int i = 0; i < visited.length; i++) {
+            visited[i] = 0;
+        }
+        g7.findHowManyVisits(visited,1,3);
+        g7.findHowManyVisits(visited,1,4);
+        g7.findHowManyVisits(visited,1,5);
+
+        for (int i = 0; i < visited.length; i++) {
+            System.out.println(visited[i]);
+        }
+
 
 
 
