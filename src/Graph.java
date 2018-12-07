@@ -1,7 +1,5 @@
-import java.util.Iterator;
+import java.util.*;
 import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
 
 /**
  * Created by ashi on 10/29/18.
@@ -81,6 +79,21 @@ public class Graph {
 
     }
 
+    public void cyclelengthDFSUtil(int v, boolean[] visited, ArrayList<ArrayList<Integer>> setOfVertices, int n, int parent){
+        visited[v] = true;
+
+    }
+
+    public void findCycleOfLengthN(int n){
+        boolean visited[] = new boolean[V+1];
+
+        ArrayList<ArrayList<Integer>> setOfVertices = new ArrayList<ArrayList<Integer>>(); // a list of the set of vertices. ArrayList provides constant lookup time
+
+        for(int i = 1;i<=V;i++){
+//            cyclelengthDFSUtil(i,visited, setOfVertices,n);
+        }
+    }
+
     public void dfsUtil(int v,boolean[] visited){
         visited[v] = true;
         System.out.println(v);
@@ -105,12 +118,12 @@ public class Graph {
         graph.addEdge(2,4);
         graph.addEdge(3,4);
         graph.addEdge(4,5);
-        graph.addEdge(5,6);
-        graph.addEdge(5,7);
-        graph.addEdge(5,8);
-        graph.addEdge(6,9);
-        graph.addEdge(7,9);
-        graph.addEdge(8,9);
+//        graph.addEdge(5,6);
+//        graph.addEdge(5,7);
+//        graph.addEdge(5,8);
+//        graph.addEdge(6,9);
+//        graph.addEdge(7,9);
+//        graph.addEdge(8,9);
 
 
 
@@ -129,7 +142,7 @@ public class Graph {
         //   g.breadthFirstSearchPrint(2);
         // graph.printDFS(1);
 
-        graph.topologicalSort();
+        graph.printDFS(1);
 
 //        Graph g1 = new Graph(9);
 //        g1.addEdge(1,2);
