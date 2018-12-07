@@ -143,10 +143,9 @@ public class Graph {
         Iterator<Integer> iterator = adjList[u].iterator();
         while(iterator.hasNext()) {
             int p = iterator.next();
-            findHowManyVisits(visited,p,v);
             visited[p]++;
+            findHowManyVisits(visited,p,v);
         }
-        visited[u]++;
     }
 
     public static void main(String[] args) {
@@ -214,19 +213,19 @@ public class Graph {
       //  g1.breadthFirstSearchPrint(1);
 
         Graph g7 = new Graph(5);
-        g7.addEdge(1,2);
+        g7.addEdge(1,0);
+        g7.addEdge(0,2);
         g7.addEdge(2,3);
         g7.addEdge(3,4);
-        g7.addEdge(4,5);
 
 
         int[] visited = new int[g7.V]; // Lol this ain't a good idea, but there's no  time for vulnerability, life is too short
         for (int i = 0; i < visited.length; i++) {
             visited[i] = 0;
         }
+        g7.findHowManyVisits(visited,1,2);
         g7.findHowManyVisits(visited,1,3);
         g7.findHowManyVisits(visited,1,4);
-        g7.findHowManyVisits(visited,1,5);
 
         for (int i = 0; i < visited.length; i++) {
             System.out.println(visited[i]);
