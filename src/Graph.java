@@ -110,6 +110,16 @@ public class Graph {
     }
 
     // Given a non-cyclic directed graph, find all possible paths to the sink/node
+
+    /**
+     * Iteratively call for all children of the node,
+     * When a node with no children is found, you simply return 1 saying there is only one
+     * possible path between parent and current node (sinks won't have a size>0 in their adjacency list representation)
+     * if this problem was tweaked to count minimum number of paths from source to sink, don't add up the total number of childre, instead,
+     * add them to some sort of heap, and do an extract minimum or keep updating the current max, and return minimum.
+     * @param v starting edge
+     * @return
+     */
     public int findNumerofPaths(int v){
        int n =  numberOfPathUtils(v);
        return n;
