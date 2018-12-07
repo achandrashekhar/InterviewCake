@@ -79,20 +79,6 @@ public class Graph {
 
     }
 
-    public void cyclelengthDFSUtil(int v, boolean[] visited, ArrayList<ArrayList<Integer>> setOfVertices, int n, int parent){
-        visited[v] = true;
-
-    }
-
-    public void findCycleOfLengthN(int n){
-        boolean visited[] = new boolean[V+1];
-
-        ArrayList<ArrayList<Integer>> setOfVertices = new ArrayList<ArrayList<Integer>>(); // a list of the set of vertices. ArrayList provides constant lookup time
-
-        for(int i = 1;i<=V;i++){
-//            cyclelengthDFSUtil(i,visited, setOfVertices,n);
-        }
-    }
 
     public void dfsUtil(int v,boolean[] visited){
         visited[v] = true;
@@ -111,6 +97,24 @@ public class Graph {
         dfsUtil(v,visited);
     }
 
+    public int numberOfPathUtils(int v) {
+        if(adjList[v].size()>0){
+        Iterator<Integer> iterator = adjList[v].iterator();
+            int totalChildren = 0;
+            while (iterator.hasNext()) {
+                totalChildren+=numberOfPathUtils(iterator.next());
+            }
+            return  totalChildren;
+        }
+        return 1;
+    }
+
+    // Given a non-cyclic directed graph, find all possible paths to the sink/node
+    public int findNumerofPaths(int v){
+       int n =  numberOfPathUtils(v);
+       return n;
+    }
+
     public static void main(String[] args) {
         Graph graph = new Graph(9);
         graph.addEdge(1,2);
@@ -124,6 +128,23 @@ public class Graph {
 //        graph.addEdge(6,9);
 //        graph.addEdge(7,9);
 //        graph.addEdge(8,9);
+
+        Graph g5 = new Graph(5);
+        g5.addEdge(1,2);
+        g5.addEdge(1,3);
+        g5.addEdge(2,4);
+        g5.addEdge(4,3);
+        g5.addEdge(3,5);
+        g5.addEdge(1,5);
+        g5.addEdge(2,5);
+        //System.out.println(g5.findNumerofPaths(1)); //4
+
+        Graph g6 = new Graph(5);
+        g6.addEdge(1,2);
+        g6.addEdge(2,5);
+        g6.addEdge(1,3);
+        g6.addEdge(4,3);
+        System.out.println(g6.findNumerofPaths(1)); //2
 
 
 
@@ -142,7 +163,7 @@ public class Graph {
         //   g.breadthFirstSearchPrint(2);
         // graph.printDFS(1);
 
-        graph.printDFS(1);
+       // graph.printDFS(1);
 
 //        Graph g1 = new Graph(9);
 //        g1.addEdge(1,2);
