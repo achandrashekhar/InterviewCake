@@ -104,29 +104,21 @@ public class ArrayQuestions {
 
     int partition(int arr[], int low, int high)
     {
+        int pIndex = low;
         int pivot = arr[high];
-        int i = (low-1); // index of smaller element
-        for (int j=low; j<high; j++)
-        {
-            // If current element is smaller than or
-            // equal to pivot
-            if (arr[j] <= pivot)
-            {
-                i++;
-
-                // swap arr[i] and arr[j]
+        for (int i = low; i < low-1; i++) {
+            if(arr[i]<=pivot){
                 int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+                arr[i] = arr[pIndex];
+                arr[pIndex] = temp;
+                pIndex++;
             }
         }
-
-        // swap arr[i+1] and arr[high] (or pivot)
-        int temp = arr[i+1];
-        arr[i+1] = arr[high];
+        // swap arr[high] and arr[pIndex]
+        int temp = arr[pIndex];
+        arr[pIndex] = arr[high];
         arr[high] = temp;
-
-        return i+1;
+        return pIndex;
     }
 
 
@@ -462,6 +454,45 @@ public class ArrayQuestions {
         merge(left,right,arr);
     }
 
+    public int addOneToArray(int[] arr, int start, int size){
+        int lengthMinusOne = size-1;
+        if(start==lengthMinusOne){
+            int t = arr[start]+1;
+            if (t==10){
+                arr[lengthMinusOne] = 0;
+                return 1;
+            } else {
+                arr[start]+=1;
+                return 0;
+            }
+        }
+         int sm = addOneToArray(arr,++start,arr.length);
+        if(start!=size-1&&sm==1) {
+           int temp = arr[start] + sm;
+           if(temp==10){
+               arr[start] = 0;
+           } else {
+               arr[start] = temp;
+           }
+            return 1;
+        }
+
+        return sm;
+    }
+
+    public void addOneToArrayUtil(int arr[]){
+        int answer = addOneToArray(arr,-1,arr.length);
+        if(answer==1){
+            int[] newArray = new int[arr.length+1];
+            newArray[0]=1;
+            for (int i = 1; i <= arr.length-1; i++) {
+                newArray[i] = arr[i];
+            }
+            printArray(newArray);
+        } else {
+            printArray(arr);
+        }
+    }
 
     public static void main(String[] args) {
         int[] array = {1,2,0,8,0,0,4,5,6};
@@ -533,9 +564,11 @@ public class ArrayQuestions {
 //        arrayQuestions.reverseMatrixColumns(arr);
 //        arrayQuestions.printMatrix(arr);
 
-        int[] arr = {-5,1,2,6,3,4,-7};
-        arrayQuestions.mergeSort(arr);
-        arrayQuestions.printArray(arr);
+       // int[] arr = {-5,1,2,6,3,4,-7};
+      //  arrayQuestions.mergeSort(arr);
+       // arrayQuestions.printArray(arr);
+        int[] arr = {9,9,9,9};
+       arrayQuestions.addOneToArrayUtil(arr);
     }
 
 

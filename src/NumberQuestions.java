@@ -12,6 +12,8 @@ public class NumberQuestions {
         System.out.println("a is "+a+" and b is "+b);
 
     }
+
+
     public static void main(String[] args) {
         NumberQuestions numberQuestions = new NumberQuestions();
         numberQuestions.swapWithoutTempBuffer(-1,3);
